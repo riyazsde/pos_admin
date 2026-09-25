@@ -22,14 +22,14 @@ const WarningIcon = () => (
 function ActiveAlerts() {
   return (
     // Added h-full and flex flex-col to match the table's parent structure
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full  flex flex-col">
       <h2 className="text-xl font-bold text-gray-900 mb-4 shrink-0">Active Alerts</h2>
       
       {/* flex-grow ensures this card stretches equally with the table card */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col gap-6 flex-grow">
         
         {/* Alert Item 1 */}
-        <div>
+        <div className="rounded border border-gray-100 p-2">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2 text-gray-800 font-medium">
               <WarningIcon />
@@ -56,7 +56,7 @@ function ActiveAlerts() {
         </div>
 
         {/* Alert Item 2 */}
-        <div>
+        <div className="rounded border border-gray-100 p-2">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2 text-gray-800 font-medium">
               <WarningIcon />

@@ -147,7 +147,7 @@ export default function SignInPage() {
         <div className="w-full lg:w-[45%] bg-white shadow-xl overflow-y-auto px-4 sm:px-8 py-10 sm:py-16">
           <div className="max-w-md mx-auto w-full">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="text-3xl sm:text-4xl font-bold text-black">Sign In</h1>
+              <h1 className="text-xl sm:text-3xl font-bold text-black">Sign In</h1>
               <img src={logo} alt="Company Logo" className="h-9 w-[150px] sm:w-[210px]" />
             </div>
 
@@ -155,7 +155,7 @@ export default function SignInPage() {
               <h1 className="text-[#000000] text-[32px] font-bold leading-[120%] tracking-[0%] text-center poppins-text">
                 Welcome Back!
               </h1>
-              <p className="text-[#000000] text-[16px] font-normal leading-[120%] tracking-normal text-center poppins-text">
+              <p className=" text-gray-600 text-[16px] font-normal leading-[120%] tracking-normal text-center poppins-text">
                 Login to access your Triaxx Account
               </p>
             </div>
