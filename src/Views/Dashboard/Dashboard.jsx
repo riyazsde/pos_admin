@@ -18,6 +18,9 @@ import SubscriptionsPurchased from '../../Components/Dashboard/SubscriptionsPurc
 import HeatMapCities from '../../Components/Dashboard/HeatMapCities';
 import SupportTickets from '../../Components/Dashboard/SupportTickets';
 import SubscriptionRenewalAlert from '../../Components/Dashboard/SubscriptionRenewalAlert';
+import ActiveAlerts from '../../Components/Dashboard/ActiveAlerts';
+import UpcommingRenewals from '../../Components/Dashboard/UpcommingRenewals';
+import Action from '../../Components/Dashboard/Action';
 
 const Dashboard = () => {
   const [selectedPeriod, setSelectedPeriod] = useState('Today');
@@ -159,14 +162,14 @@ const Dashboard = () => {
       </div>
 
       {/* Section 1 */}
-      <div className="flex flex-col lg:flex-row gap-4 mb-6">
-        <div className="w-full lg:w-3/5">
-          <CurrentMonthActivity />
-        </div>
-        <div className="w-full lg:w-2/5">
-          <MonthlyGrowthChart />
-        </div>
-      </div>
+      <div className="flex flex-col lg:flex-row gap-4 mb-6 items-stretch">
+  <div className="w-full lg:w-3/5 flex">
+    <CurrentMonthActivity />
+  </div>
+  <div className="w-full lg:w-2/5 flex">
+    <MonthlyGrowthChart />
+  </div>
+</div>
 
       {/* Section 2 */}
     <style>{`
@@ -174,7 +177,7 @@ const Dashboard = () => {
           display: grid;
           grid-template-columns: 1fr;
           gap: 1.5rem;
-          padding: 1.5rem;
+          padding: .3rem;
         }
         @media (min-width: 1024px) {
           .dashboard-grid {
@@ -191,24 +194,40 @@ const Dashboard = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="flex flex-col lg:flex-row gap-4 mb-6">
-        <div className="w-full lg:w-3/5">
-          <SubscriptionsPurchased />
-        </div>
-        <div className="w-full lg:w-2/5">
-          <HeatMapCities />
-        </div>
+     <div className="flex flex-col mt-4 lg:flex-row gap-6 mb-6 items-stretch">
+      <div className="w-full lg:w-3/5">
+        <SubscriptionsPurchased />
       </div>
+      <div className="w-full lg:w-2/5">
+        <HeatMapCities />
+      </div>
+    </div>
 
       {/* Section 4 */}
-      <div className="flex flex-col lg:flex-row gap-4 mb-6">
-        <div className="w-full lg:w-2/5">
-          <SupportTickets />
-        </div>
-        <div className="w-full lg:w-3/5">
-          <SubscriptionRenewalAlert />
-        </div>
+     <div className="flex flex-col lg:flex-row gap-4 mb-6 items-stretch">
+    <div className="w-full lg:w-2/5">
+        <SupportTickets />
+    </div>
+    <div className="w-full lg:w-3/5">
+        <SubscriptionRenewalAlert />
+    </div>
+</div>
+{/* section 05 */}
+ <div className="flex flex-col lg:flex-row gap-6 mb-3 items-stretch p-4">
+      
+      <div className="w-full lg:w-[68%]">
+        <UpcommingRenewals />
       </div>
+
+      <div className="w-full lg:w-[32%]">
+        <ActiveAlerts />
+      </div>
+      
+    </div>
+{/* section 06*/}
+<div>
+  <Action/>
+</div>
     </div>
   );
 };

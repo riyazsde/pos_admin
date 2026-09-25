@@ -37,7 +37,7 @@ const CurrentMonthActivity = () => {
     <div className="w-full">
       {/* Main Card Container */}
       <div
-        className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100"
+        className="bg-white rounded-3xl p-6  h-full shadow-sm border border-gray-100"
         style={{
           boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.05)',
         }}

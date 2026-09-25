@@ -37,7 +37,7 @@ export default function MonthlyGrowthChart() {
   return (
     <div className="w-full">
       <div
-        className="bg-white rounded-3xl p-6"
+        className="bg-white rounded-3xl  h-full p-6"
         style={{
           boxShadow:
             '0px 4px 20px rgba(0, 0, 0, 0.05), inset 0px 0px 1px rgba(0, 0, 0, 0.15)',
